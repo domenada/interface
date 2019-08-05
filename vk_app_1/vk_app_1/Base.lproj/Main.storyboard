@@ -92,6 +92,21 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="4ec-JQ-VBA">
+            <objects>
+                <viewController id="qxI-dL-6S6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oq6-Sn-ODl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="U1i-vB-vnl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lpw-bS-bxh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="916" y="114"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Background2" width="1200" height="750"/>
