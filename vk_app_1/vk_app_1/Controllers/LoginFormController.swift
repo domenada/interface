@@ -9,8 +9,9 @@
 import UIKit
 
 class LoginFormController: UIViewController {
-    @IBOutlet weak var scrollView: UIScrollView!
     
+    
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
@@ -40,14 +41,25 @@ class LoginFormController: UIViewController {
     }
     
     @IBAction func loginButtonTap(_ sender: Any) {
+        
         let login = self.loginTextField.text ?? "nan"
         let pass = self.passwordTextField.text ?? "nan"
         
-        if login == "admin" && pass == "0000" {
+        if login == "" && pass == "" {
             print("Success")
+            performSegue(withIdentifier: "SuccessLogin", sender: nil)
         } else {
             print("Error")
-        }
-        
+            let alert = UIAlertController(title: "Error", message: "Wrong login or password", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { _ in
+                print("OK TAP")
+            }))
+            present(alert, animated: true, completion: nil)
+            
+            //Очищаем поле ввода
+            self.loginTextField.text = ""
+            self.passwordTextField.text = ""
+      
     }
+}
 }
