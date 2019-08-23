@@ -14,6 +14,10 @@
 		6E84BC8E22F7A77200097FBB /* vk_app_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E84BC8D22F7A77200097FBB /* vk_app_1Tests.swift */; };
 		6E84BC9922F7A77200097FBB /* vk_app_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E84BC9822F7A77200097FBB /* vk_app_1UITests.swift */; };
 		6E84BCA922F7ADED00097FBB /* LoginFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E84BCA822F7ADED00097FBB /* LoginFormController.swift */; };
+		6E97D9EC22FE3B2A009BE6EB /* FriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E97D9EB22FE3B2A009BE6EB /* FriendsController.swift */; };
+		6E97D9EE22FE3B63009BE6EB /* GroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E97D9ED22FE3B63009BE6EB /* GroupsController.swift */; };
+		6E97D9F022FE3B8F009BE6EB /* SearchGroupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E97D9EF22FE3B8F009BE6EB /* SearchGroupController.swift */; };
+		6E97D9F222FE3BAA009BE6EB /* PhotoFriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E97D9F122FE3BAA009BE6EB /* PhotoFriendController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		6E84BC9822F7A77200097FBB /* vk_app_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vk_app_1UITests.swift; sourceTree = "<group>"; };
 		6E84BC9A22F7A77200097FBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E84BCA822F7ADED00097FBB /* LoginFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormController.swift; sourceTree = "<group>"; };
+		6E97D9EB22FE3B2A009BE6EB /* FriendsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsController.swift; sourceTree = "<group>"; };
+		6E97D9ED22FE3B63009BE6EB /* GroupsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsController.swift; sourceTree = "<group>"; };
+		6E97D9EF22FE3B8F009BE6EB /* SearchGroupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGroupController.swift; sourceTree = "<group>"; };
+		6E97D9F122FE3BAA009BE6EB /* PhotoFriendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFriendController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +87,8 @@
 			children = (
 				6E84BC7722F7A76E00097FBB /* vk_app_1 */,
 				6E84BC8C22F7A77200097FBB /* vk_app_1Tests */,
-				6E84BC9722F7A77200097FBB /* vk_app_1UITests */,
 				6E84BC7622F7A76E00097FBB /* Products */,
+				6E84BC9722F7A77200097FBB /* vk_app_1UITests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				6E84BC7822F7A76E00097FBB /* AppDelegate.swift */,
-				6E84BCA822F7ADED00097FBB /* LoginFormController.swift */,
-				6E84BC7C22F7A76E00097FBB /* Main.storyboard */,
-				6E84BC7F22F7A77200097FBB /* Assets.xcassets */,
-				6E84BC8122F7A77200097FBB /* LaunchScreen.storyboard */,
 				6E84BC8422F7A77200097FBB /* Info.plist */,
+				6E97D9F322FE3BEF009BE6EB /* Controllers */,
+				6E84BC7C22F7A76E00097FBB /* Main.storyboard */,
+				6E84BC8122F7A77200097FBB /* LaunchScreen.storyboard */,
+				6E84BC7F22F7A77200097FBB /* Assets.xcassets */,
 			);
 			path = vk_app_1;
 			sourceTree = "<group>";
@@ -123,6 +131,18 @@
 				6E84BC9A22F7A77200097FBB /* Info.plist */,
 			);
 			path = vk_app_1UITests;
+			sourceTree = "<group>";
+		};
+		6E97D9F322FE3BEF009BE6EB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E84BCA822F7ADED00097FBB /* LoginFormController.swift */,
+				6E97D9EB22FE3B2A009BE6EB /* FriendsController.swift */,
+				6E97D9F122FE3BAA009BE6EB /* PhotoFriendController.swift */,
+				6E97D9ED22FE3B63009BE6EB /* GroupsController.swift */,
+				6E97D9EF22FE3B8F009BE6EB /* SearchGroupController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +277,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E84BCA922F7ADED00097FBB /* LoginFormController.swift in Sources */,
+				6E97D9F022FE3B8F009BE6EB /* SearchGroupController.swift in Sources */,
+				6E97D9F222FE3BAA009BE6EB /* PhotoFriendController.swift in Sources */,
+				6E97D9EE22FE3B63009BE6EB /* GroupsController.swift in Sources */,
+				6E97D9EC22FE3B2A009BE6EB /* FriendsController.swift in Sources */,
 				6E84BC7922F7A76E00097FBB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
